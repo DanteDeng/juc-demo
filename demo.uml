@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.nature.definitions.ExecutorService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="315.0">com.nature.definitions.OperateResource</node>
+    <node x="647.125" y="240.0">com.nature.executor.DemoConsumerExecutorService</node>
+    <node x="400.125" y="240.0">com.nature.executor.DemoProducerExecutorService</node>
+    <node x="900.125" y="240.0">com.nature.producer.DemoProducer</node>
+    <node x="669.15625" y="80.0">java.util.concurrent.Callable</node>
+    <node x="209.25" y="160.0">com.nature.watcher.AbstractWatcher</node>
+    <node x="254.75000000000003" y="240.0">com.nature.watcher.AbstractWatcher.WatchRunner</node>
+    <node x="391.5" y="160.0">com.nature.executor.AbstractExecutorService</node>
+    <node x="637.6562500000001" y="0.0">java.lang.FunctionalInterface</node>
+    <node x="43.25" y="160.0">com.nature.repository.DemoRepository</node>
+    <node x="0.0" y="240.0">com.nature.watcher.DemoWatcher</node>
+    <node x="126.25" y="0.0">com.nature.definitions.Watchable</node>
+    <node x="1056.125" y="240.0">com.nature.consumer.DemoConsumer</node>
+    <node x="957.5375" y="160.0">com.nature.definitions.OperationCallable</node>
+    <node x="11.0" y="395.0">com.nature.product.DemoProduct</node>
+    <node x="44.75" y="80.0">com.nature.definitions.RepositoryProxy</node>
+    <node x="334.0" y="80.0">com.nature.definitions.ExecutorService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.nature.watcher.DemoWatcher" target="com.nature.watcher.AbstractWatcher">
+      <point x="32.75" y="-15.0" />
+      <point x="98.25" y="220.0" />
+      <point x="245.25" y="220.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="com.nature.repository.DemoRepository" target="com.nature.definitions.RepositoryProxy">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.nature.definitions.RepositoryProxy" target="com.nature.definitions.Watchable">
+      <point x="0.0" y="-15.0" />
+      <point x="116.25" y="60.0" />
+      <point x="167.125" y="60.0" />
+      <point x="-13.625" y="15.0" />
+    </edge>
+    <edge source="com.nature.definitions.OperationCallable" target="java.util.concurrent.Callable">
+      <point x="0.0" y="-15.0" />
+      <point x="1034.0375" y="130.0" />
+      <point x="751.4062500000001" y="130.0" />
+      <point x="35.25000000000006" y="15.0" />
+    </edge>
+    <edge source="com.nature.producer.DemoProducer" target="com.nature.definitions.OperationCallable">
+      <point x="0.0" y="-15.0" />
+      <point x="968.125" y="220.0" />
+      <point x="995.7875" y="220.0" />
+      <point x="-38.25" y="15.0" />
+    </edge>
+    <edge source="com.nature.consumer.DemoConsumer" target="com.nature.definitions.OperationCallable">
+      <point x="0.0" y="-15.0" />
+      <point x="1127.125" y="220.0" />
+      <point x="1072.2875" y="220.0" />
+      <point x="38.25" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.DemoProducerExecutorService" target="java.util.concurrent.Callable">
+      <point x="56.75" y="-15.0" />
+      <point x="570.375" y="220.0" />
+      <point x="589.0" y="220.0" />
+      <point x="589.0" y="140.0" />
+      <point x="704.40625" y="140.0" />
+      <point x="-11.75" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.DemoConsumerExecutorService" target="com.nature.executor.AbstractExecutorService">
+      <point x="-58.24999999999994" y="-15.0" />
+      <point x="705.375" y="210.0" />
+      <point x="531.75" y="210.0" />
+      <point x="46.75" y="15.0" />
+    </edge>
+    <edge source="com.nature.watcher.AbstractWatcher" target="com.nature.definitions.ExecutorService">
+      <point x="36.0" y="-15.0" />
+      <point x="317.25" y="140.0" />
+      <point x="368.75" y="140.0" />
+      <point x="-34.75" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.AbstractExecutorService" target="com.nature.definitions.ExecutorService">
+      <point x="-46.75" y="-15.0" />
+      <point x="34.75" y="15.0" />
+    </edge>
+    <edge source="com.nature.watcher.DemoWatcher" target="com.nature.definitions.Watchable">
+      <point x="-32.75" y="-15.0" />
+      <point x="32.75" y="50.0" />
+      <point x="139.875" y="50.0" />
+      <point x="-40.875" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.DemoConsumerExecutorService" target="java.util.concurrent.Callable">
+      <point x="58.25000000000006" y="-15.0" />
+      <point x="821.875" y="140.0" />
+      <point x="727.90625" y="140.0" />
+      <point x="11.75" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.DemoProducerExecutorService" target="com.nature.executor.AbstractExecutorService">
+      <point x="-56.75" y="-15.0" />
+      <point x="456.875" y="220.0" />
+      <point x="438.25" y="220.0" />
+      <point x="-46.75" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.Callable" target="java.lang.FunctionalInterface">
+      <point x="5.6843418860808015E-14" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.nature.definitions.ExecutorService" target="com.nature.definitions.Watchable">
+      <point x="0.0" y="-15.0" />
+      <point x="403.5" y="50.0" />
+      <point x="221.625" y="50.0" />
+      <point x="40.875" y="15.0" />
+    </edge>
+    <edge source="com.nature.product.DemoProduct" target="com.nature.definitions.OperateResource">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.nature.watcher.AbstractWatcher.WatchRunner" target="com.nature.watcher.AbstractWatcher">
+      <point x="0.0" y="-15.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="com.nature.watcher.AbstractWatcher" target="com.nature.definitions.Watchable">
+      <point x="-36.0" y="-15.0" />
+      <point x="245.25000000000003" y="60.0" />
+      <point x="194.375" y="60.0" />
+      <point x="13.625" y="15.0" />
+    </edge>
+    <edge source="com.nature.executor.AbstractExecutorService" target="java.util.concurrent.Callable">
+      <point x="46.75" y="-15.0" />
+      <point x="531.75" y="130.0" />
+      <point x="680.90625" y="130.0" />
+      <point x="-35.25" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="693.0" y="276.0" />
+  <SelectedNodes>
+    <node>com.nature.product.DemoProduct</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
